@@ -1,0 +1,144 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7fc;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #0066cc;
+  padding: 15px;
+  text-align: center;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+.navbar a:hover {
+  background-color: #005bb5;
+  border-radius: 4px;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #004f99;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Student Profile Section */
+.student-profile {
+  background-color: #ffffff;
+  padding: 30px;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+.student-profile h2 {
+  color: #0066cc;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.student-profile p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.student-profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 30px;
+}
+
+.student-profile .info {
+  max-width: 60%; 
+}
+
+/* Quick Links Section */
+.quick-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.quick-links div {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 150px;
+}
+
+.quick-links div:hover {
+  background-color: #eef2f7;
+}
+
+.quick-links i {
+  font-size: 2rem;
+  color: #0066cc;
+}
+
+.quick-links p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Footer */
+.footer {
+  background-color: #0066cc;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .quick-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .student-profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .student-profile img {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .student-profile .info {
+    max-width: 100%; /* Allow text to take full width on mobile */
+    margin-top: 20px;
+  }
+}
